@@ -1,18 +1,129 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт Vektor998</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Нигерзавр — удивительный динозавр</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#0f172a;
+    color:white;
+    line-height:1.6;
+}
+
+header{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#334155);
+}
+
+h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.subtitle{
+    font-size:1.4rem;
+    max-width:800px;
+}
+
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.card{
+    background:#1e293b;
+    border-radius:20px;
+    padding:30px;
+    margin-bottom:30px;
+}
+
+h2{
+    margin-bottom:20px;
+    color:#38bdf8;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:15px;
+}
+
+ul{
+    padding-left:20px;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    background:#020617;
+}
+</style>
 </head>
 <body>
-    <h1>Добро пожаловать!</h1>
-    <p>Это мой первый сайт на GitHub Pages.</p>
 
-    <h2>Обо мне</h2>
-    <p>Здесь будет размещена информация обо мне и моих проектах.</p>
+<header>
+    <h1>Нигерзавр</h1>
+    <p class="subtitle">
+        Один из самых необычных динозавров мелового периода.
+        Его пасть содержала сотни зубов и напоминала гигантский пылесос для растений.
+    </p>
+</header>
 
-    <h2>Контакты</h2>
-    <p>Раздел находится в разработке.</p>
+<section>
+    <div class="card">
+        <h2>Кратко о Нигерзавре</h2>
+        <p>
+            Нигерзавр жил около 110 миллионов лет назад.
+            Он был травоядным динозавром длиной примерно 9 метров.
+            Наиболее известен своей широкой челюстью и огромным количеством зубов.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Интересные факты</h2>
+        <ul>
+            <li>Имел более 500 зубов.</li>
+            <li>Постоянно заменял старые зубы новыми.</li>
+            <li>Питался низкорослой растительностью.</li>
+            <li>Жил на территории современного Нигера.</li>
+            <li>Относился к группе завропод.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Галерея</h2>
+        <div class="gallery">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Nigersaurus_taqueti.jpg/800px-Nigersaurus_taqueti.jpg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Nigersaurus_skull.jpg/800px-Nigersaurus_skull.jpg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Nigersaurus_reconstruction.jpg/800px-Nigersaurus_reconstruction.jpg">
+        </div>
+    </div>
+</section>
+
+<footer>
+    Сайт посвящён удивительному динозавру Нигерзавру
+</footer>
+
 </body>
 </html>
